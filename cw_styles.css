@@ -21,6 +21,15 @@
 
 @import url("cw_designs.css");
 
+
+
+
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
+
+
 nav#bottom ul li {
     display: -webkit-flex;
     display: flex;
@@ -29,13 +38,6 @@ nav#bottom ul li {
     justify-content: center;
     flex: 150px;
 }
-
-/* ===============================
-	General Styles for All Devices
-   ===============================
-*/
-
-
 
 /* ===============================
 	Mobile Styles up to 480 pixels
@@ -59,6 +61,52 @@ nav#bottom ul li {
         font-size: 2.2em;
         flex: 1 1 130px;
     }
+
+    nav#top ul li:nth-last-of-type(1) {
+        background: url(cw_image01.png) no-repeat;
+        width: 100%;
+    }
+
+    nav#top ul li:nth-last-of-type(2) {
+        background: url(cw_image02.png ) no-repeat;
+        width: 100%;
+    }
+
+    nav#top ul li:nth-last-of-type(3) {
+        background: url(cw_image03.png )no-repeat;
+        width: 100%;
+    }
+
+    nav#top ul li:nth-last-of-type(4) {
+        background: url(cw_image04.png )no-repeat;
+        width: 100%;
+    }
+
+    nav#top ul li:nth-last-of-type(5) {
+        background: url(cw_image05.png )no-repeat;
+        width: 100%;
+    }
+
+    nav#top ul li:nth-last-of-type(6) {
+        background: url(cw_image06.png )no-repeat;
+        width: 100%;
+    }
+
+
+
+    article p#links {
+        justify-content: space-around;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    }
+
+    p>a {
+        font: white;
+        background: rgb(220, 27, 27);
+        border-radius: 20px 10px;
+        text-decoration: none;
+    }
+
 }
 
 
@@ -67,3 +115,30 @@ nav#bottom ul li {
 	Tablet and Desktop Devices: 481px or more 
    ============================================
 */
+@media only screen and (min-width: 481px) {
+    body {
+        display: flex;
+        display: -webkit-flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+    }
+
+    article {
+        -webkit-flex: 2 1 400px;
+        flex: 2 1 400px;
+    }
+
+    aside {
+        -webkit-flex: 1 2 200px;
+        flex: 1 2 400px;
+
+    }
+
+    nav#top ul {
+        background: f rgb(51, 51, 51);
+        height: 50px;
+        justify-content: center;
+        align-content: center;
+
+    }
+}
